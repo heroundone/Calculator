@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+#calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background-color: lightgrey;
+    height: 200px;
+    width: 200px;
+}
+
+#display {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    background-color:white;
+    color: black;
+    margin-bottom: 5px;
+}
+
+#displayText {
+    text-align: right;
+    width: 100%;
+    margin-right: 3px;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+#buttons div {
+    display: flex;
+    flex-direction: column;
+    padding: 3px;
+    gap: 5px;
+    flex: 1 1 auto;
+}
+
+button {
+    border: solid black 1px;
+    box-sizing: border-box;
+    font-size: larger;
+}
+
+.operators {
+    background-color: red;
+    color: white;
+}

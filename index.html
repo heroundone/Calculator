@@ -5,35 +5,38 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <script src="calculator.js" defer></script>
+        <link href="style.css" rel="stylesheet">
         <title>calculator</title>
     </head>
     <body>
         <div id="calculator">
-            <div id="display"></div>
+            <div id="display">
+                <span id="displayText">fff</span>
+            </div>
             <div id="buttons">
                 <div>
-                    <span>1</span>
-                    <span>4</span>
-                    <span>7</span>
-                    <span>clear</span>
+                    <button>1</button>
+                    <button>4</button>
+                    <button>7</button>
+                    <button>c</button>
                 </div>
                 <div>
-                    <span>2</span>
-                    <span>5</span>
-                    <span>8</span>
-                    <span>0</span>
+                    <button>2</button>
+                    <button>5</button>
+                    <button>8</button>
+                    <button>0</button>
                 </div>
                 <div>
-                    <span>3</span>
-                    <span>6</span>
-                    <span>9</span>
-                    <span>=</span>
+                    <button>3</button>
+                    <button>6</button>
+                    <button>9</button>
+                    <button>=</button>
                 </div>
                 <div>
-                    <span>+</span>
-                    <span>-</span>
-                    <span>*</span>
-                    <span>/</span>
+                    <button class="operators" id="add">+</button>
+                    <button class="operators" id="subtract">-</button>
+                    <button class="operators" id="multipy">*</button>
+                    <button class="operators" id="divide">/</button>
                 </div>
             </div>
         </div>
