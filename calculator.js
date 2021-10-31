@@ -57,8 +57,8 @@ document.querySelectorAll('.toDisplay').forEach(digit => {
             }
             else {
                answer = operate(equation['num1'], equation['num2'], equation['operator']);
-               equation['num1'] = answer;
-               display.textContent = answer;
+               equation['num1'] = answer.toFixed(2);
+               display.textContent = answer.toFixed(2);
                equation['operator'] = null;
                equation['num2'] = null;
             }
@@ -92,8 +92,8 @@ document.querySelectorAll('.toDisplay').forEach(digit => {
 document.querySelector('#solve').addEventListener('click', () => {
     if(equation['num1'] != null && equation['num2'] != null && equation['operator'] != null) {
         answer = operate(equation['num1'], equation['num2'], equation['operator']);
-        equation['num1'] = answer;
-        display.textContent = answer;
+        equation['num1'] = answer.toFixed(2);
+        display.textContent = answer.toFixed(2);
         equation['operator'] = null;
         equation['num2'] = null;
     }
